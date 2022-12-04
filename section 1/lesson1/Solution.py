@@ -8,12 +8,14 @@ if __name__ == "__main__":
     computer_choice = "paper"
     print(computer_choice)
 
+
     # FUNCTIONS
     def get_choices():
         player_choice = "kohli"
         computer_choice = "dhoni"
 
         return computer_choice
+
 
     choices = get_choices()
     print(choices)
@@ -22,12 +24,14 @@ if __name__ == "__main__":
 
     dict = {"name": "parag", "country": "India"}
 
+
     # INPUT FUNCTION
     def get_choices():
         player_choice = input("kohli or dhoni : ")
         computer_choice = "dhoni"
         choices = {"player": player_choice, "computer": computer_choice}
         return choices
+
 
     choices = get_choices()
     print(choices)
@@ -42,10 +46,12 @@ if __name__ == "__main__":
     menu = random.choices(food)
     print(menu)
 
+
     # FUNCTIONS ARGUMENTS
 
     def check_win(player, computer):
         return [player, computer]
+
 
     # IF STATEMENTS
 
@@ -54,13 +60,44 @@ if __name__ == "__main__":
     if a >= b:
         print("yes")
 
+
     def check_win(player, computer):
         if player == computer:
-        return "It's a tie!"
-
-    # CONCATENATE STRINGS ->
+            return "It's a tie!"
 
 
+    # CONCATENATE STRINGS -> combination of strings
+
+    def check_win(player, computer):
+        print("You choose " + player + ", computer choose " + computer)
+        if player == computer:
+            return "It's a tie!"
+
+
+    # F-strings
+    def check_win(player, computer):
+        print(f"You choose {player}, computer choose {computer}")
+        if player == computer:
+            return "It's a tie!"
+
+
+    check_win("rock", "paper")
+
+    # Else and if statements
+
+    age = 28
+
+    if age > 18:
+        print("You are an adult.")
+    elif age > 12:
+        print("You are an teenager.")
+    elif age > 1:
+        print("You are an child.")
+    else:
+        print("You are an baby.")
+
+    # REFRACTORING AND NESTED IF-> process of restructing code while keeping the original functionality to make it \
+    # simple and more understandable.
 
 
 
