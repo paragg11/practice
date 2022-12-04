@@ -18,3 +18,49 @@ if __name__ == "__main__":
     choices = get_choices()
     print(choices)
 
+    # DIRECTIONARY -> KEY VALUE PAIR
+
+    dict = {"name": "parag", "country": "India"}
+
+    # INPUT FUNCTION
+    def get_choices():
+        player_choice = input("kohli or dhoni : ")
+        computer_choice = "dhoni"
+        choices = {"player": player_choice, "computer": computer_choice}
+        return choices
+
+    choices = get_choices()
+    print(choices)
+
+    # LIBRARY
+
+    import random
+
+    # LISTS
+
+    food = ["pizza", "sandwich", "burger"]
+    menu = random.choices(food)
+    print(menu)
+
+    # FUNCTIONS ARGUMENTS
+
+    def check_win(player, computer):
+        return [player, computer]
+
+    # IF STATEMENTS
+
+    a = 3
+    b = 5
+    if a >= b:
+        print("yes")
+
+    def check_win(player, computer):
+        if player == computer:
+        return "It's a tie!"
+
+    # CONCATENATE STRINGS ->
+
+
+
+
+
