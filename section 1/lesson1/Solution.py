@@ -144,7 +144,14 @@ if __name__ == "__main__":
     # test!
     # test%
 
+    # EXPRESSIONS AND STATEMENT
 
+    name = "parag"
+    print(name)
+
+    name = "parag"; print(name)
+
+    # COMMENTS
 
 
 
