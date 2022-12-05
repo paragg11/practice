@@ -153,6 +153,9 @@ if __name__ == "__main__":
 
     # COMMENTS
 
+    name = "parag" # this is inline comment
+    # everything written within hash is ignored
+
 
 
 
