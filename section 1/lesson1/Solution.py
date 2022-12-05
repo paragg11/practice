@@ -223,5 +223,17 @@ if __name__ == "__main__":
     def is_adult(age):
         return True if age> 18 else False
 
+    #STRINGS -> "" ''
+
+    name = 'parag'
+    phrase = name + " is my name" #concatenated string
+    name += " is my name"
+    age = str(10)
+    print("""
+    parag is 
+    my 
+    name
+    """)                            #multiline string
+
 
 
