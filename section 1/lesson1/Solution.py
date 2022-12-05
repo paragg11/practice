@@ -172,5 +172,56 @@ if __name__ == "__main__":
     age = float(11)
     print(isinstance(age, float))
 
+    # OPERATORS
+
+    age = 11            # assignment operator
+    age += 11
+
+    # ARITHEMATIC OPERTORS
+
+    1 + 1
+    2 - 1
+    2 * 2
+    4 / 2
+    4 % 2
+    4 // 2
+
+    # COMPARISON OPERATORS
+
+    a == b
+    a != b
+    a > b
+    a <= b
+
+    # BOOLEAN DATA TYPE -> TRUE/FALSE
+
+    # BOOLEAN OPERATORS -> not/or/and
+
+    print(0 or 1)               #1
+    print(False or 'hey')       #hey
+    print("hi" or "hey")        #hi
+    print([] or False)          #False
+    print(False or [])          #[]
+
+    print(0 and 1)              #0
+    print(1 and 0)              #0
+    print(False and 'hey')      #False
+    print('hi' and 'hey')       #hey
+    print([] and False)         #[]
+    print(False and [])         #False
+
+    # BITWISE OPERATORS
+
+    # & performs binary AND
+    # | performs binary OR
+    # ~ performs a binary NOT operation
+    # << shift left operation
+    # >> shift right operation
+
+    #TERNARY OPERATOR -> if else statement all in a single line
+
+    def is_adult(age):
+        return True if age> 18 else False
+
 
 
