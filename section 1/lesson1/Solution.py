@@ -121,5 +121,13 @@ if __name__ == "__main__":
 
     check_winn("rock", "rock")
 
+    # ACCESSING DICTIONARY VALUE
+
+    choices = {"player": "parag", "computer": "gunjal"}
+    p_choices = choices["player"]
+    p_choices = choices["computer"]
+
+
+
 
 
