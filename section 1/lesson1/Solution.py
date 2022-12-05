@@ -99,5 +99,27 @@ if __name__ == "__main__":
     # REFRACTORING AND NESTED IF-> process of restructing code while keeping the original functionality to make it \
     # simple and more understandable.
 
+    def check_winn(player, computer):
+        print(f"You choose {player}, computer choose {computer}.")
+        if player == computer:
+            print("It's a tie.")
+        elif player == "rock":
+            if computer == "scissors":
+                return "Rock smashes scissors! You win!"
+            else:
+                return "paper covers rock! You lose!"
+        elif player == "paper":
+            if computer == "rock":
+                return "Paper covers rock! You win!"
+            else:
+                return "scissors cuts paper! You lose!"
+        elif player == "scissors":
+            if computer == "paper":
+                return "scissors cuts paper! You win!"
+            else:
+                return "rock smashes scissors! You lose!"
+
+    check_winn("rock", "rock")
+
 
 
