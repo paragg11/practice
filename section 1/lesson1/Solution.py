@@ -156,6 +156,21 @@ if __name__ == "__main__":
     name = "parag" # this is inline comment
     # everything written within hash is ignored
 
+    # DATA TYPES
+
+    name = "parag"                          #STRING
+    print(type(name))
+    print(type(name) == str)
+    print(isinstance(name, str))
+
+    age = 11
+    print(isinstance(age, int))
+    print(isinstance(age, float))
+
+    # DATA TYPE CONVERSION
+
+    age = float(11)
+    print(isinstance(age, float))
 
 
 
