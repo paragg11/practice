@@ -127,6 +127,24 @@ if __name__ == "__main__":
     p_choices = choices["player"]
     p_choices = choices["computer"]
 
+    # VARIABLES -> you can't use keywords as variable name e.g "if"
+
+    name = "parag"
+
+    # VALID VARIABLES
+
+    # name1
+    # HEIGHT
+    # my_name
+    # _name
+
+    # INVALID VARIABLES
+
+    # 123
+    # test!
+    # test%
+
+
 
 
 
