@@ -268,6 +268,26 @@ if __name__ == "__main__":
     print(name[1:3])                #ar
     print(name[2:])                 #rag
 
+    # BOOLEANS -> True/False
 
+    done = True
 
+    if done:
+        print("yes")
+    else:
+        print("no")
 
+    done = False
+
+    if done:
+        print("yes")
+    else:
+        print("no")
+
+    ingrediants_purchased = True
+    meal_cooked = False
+
+    ready_to_serve = any([ingrediants_purchased, meal_cooked])                #True
+    print(ready_to_serve)
+    ready_to_serve = all([ingrediants_purchased, meal_cooked])                #False
+    print(ready_to_serve)
