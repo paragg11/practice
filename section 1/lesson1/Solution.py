@@ -364,5 +364,11 @@ if __name__ == "__main__":
     dogs[1:1] = ["bb", "cc"]        #inserting multiple items
     print(dogs)             # ['roger', 'bb', 'cc', 1, 'aa', 'coopie', True, 'max', 'ray', 5, 'ray']
 
+    items = ["Roger", "bob", "Brew", "Quincy"]
+    items.sort()
+    print(items)                    # ['Brew', 'Quincy', 'Roger', 'bob']
+    items.sort(key=str.lower)
+    print(items)                    # ['bob', 'Brew', 'Quincy', 'Roger']
 
+    print(sorted(items, key=str.lower))     # ['bob', 'Brew', 'Quincy', 'Roger']
 
