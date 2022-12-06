@@ -372,3 +372,14 @@ if __name__ == "__main__":
 
     print(sorted(items, key=str.lower))     # ['bob', 'Brew', 'Quincy', 'Roger']
 
+    # TUPLES -> no changes
+
+    names = ('parag', 'pg', 'parry')
+    names[0]
+    names[0:2]
+    len(names)
+    print("parag" in names)
+    print(sorted(names))
+    newtuples = names + ("gg", "pmg")
+    print(newtuples)                        # ('parag', 'pg', 'parry', 'gg', 'pmg')
+
