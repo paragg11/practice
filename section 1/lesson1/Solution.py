@@ -302,3 +302,19 @@ if __name__ == "__main__":
     print(round(5.6))                   # 6
     print(round(5.4))                   # 5
 
+    # ENUMERATE
+
+    from enum import Enum
+
+    class State(Enum):
+        INACTIVE = 0
+        ACTIVE = 1
+
+    print(State.INACTIVE)       # State.Inactive
+    print(State.INACTIVE.value)     # 0
+    print(list(State))              # [<State.INACTIVE: 0>, <State.ACTIVE: 1>]
+    print(State(1))                 # State.ACTIVE
+
+    #
+
+
