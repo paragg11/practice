@@ -260,5 +260,14 @@ if __name__ == "__main__":
     # \ -> escaping characters
     # \n -> new line
 
+    # STRING CHARACTERS AND SLICING
+
+    name = "parag"
+    print(name[0])                  #p
+    print(name[::])                 #parag
+    print(name[1:3])                #ar
+    print(name[2:])                 #rag
+
+
 
 
