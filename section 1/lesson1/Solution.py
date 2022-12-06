@@ -291,3 +291,14 @@ if __name__ == "__main__":
     print(ready_to_serve)
     ready_to_serve = all([ingrediants_purchased, meal_cooked])                #False
     print(ready_to_serve)
+
+    # NUMBER DATA TYPES - COMPLEX TYPE
+
+    num1 = 2+3j
+    num2 = complex(2, 3)
+
+    print(num2.real, num2.imag)         # 2.0 3.0
+    print(abs(-111))                    # 111
+    print(round(5.6))                   # 6
+    print(round(5.4))                   # 5
+
