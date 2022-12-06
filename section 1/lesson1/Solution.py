@@ -332,4 +332,37 @@ if __name__ == "__main__":
     else:
         print("quit")
 
+    # LISTS
+
+    dogs = ["roger", 1, "syd", True]
+
+    print("roger" in dogs)          # True
+    print("rog" in dogs)            # False
+
+    print(dogs[0])          # roger
+    print(dogs[2])          # syd
+
+    dogs[2] = "coopie"
+
+    print(dogs[2])          # coopie
+    print(dogs)             # ['roger', 1, 'coopie', True]
+
+    print(dogs[1:3])        # slicing -> [1, 'coopie']
+    print(len(dogs))        # 4
+
+    dogs.append("max")           #
+    dogs.extend(["ray", 5])
+    dogs += ["ray", 5]
+    print(dogs)             # ['roger', 1, 'coopie', True, 'max', 'ray', 5, 'ray', 5]
+
+    dogs.pop()              # 5
+    print(dogs)             # ['roger', 1, 'coopie', True, 'max', 'ray', 5, 'ray']
+
+    dogs.insert(2, "aa")
+    print(dogs)             # ['roger', 1, 'aa', 'coopie', True, 'max', 'ray', 5, 'ray']
+
+    dogs[1:1] = ["bb", "cc"]        #inserting multiple items
+    print(dogs)             # ['roger', 'bb', 'cc', 1, 'aa', 'coopie', True, 'max', 'ray', 5, 'ray']
+
+
 
