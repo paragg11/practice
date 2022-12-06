@@ -315,6 +315,21 @@ if __name__ == "__main__":
     print(list(State))              # [<State.INACTIVE: 0>, <State.ACTIVE: 1>]
     print(State(1))                 # State.ACTIVE
 
-    #
+    #  USER INPUT FUNCTION
+
+    age = input("What is your age? ")
+    print("your age is " + age)
+
+    # CONTROL STATEMENTS
+
+    condition = True
+    name = "parag"
+
+    if condition == True:
+        print("yes")
+    elif name == "parag1":
+        print("woho")
+    else:
+        print("quit")
 
 
