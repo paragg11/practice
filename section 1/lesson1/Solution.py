@@ -235,5 +235,30 @@ if __name__ == "__main__":
     name
     """)                            #multiline string
 
+    # STRING METHODS
+
+    print("parag".upper())
+    print("PArag".lower())
+    print("parag gunjal".title())
+
+    # isalpha() -> contains only character and is not empty
+    # isalnum() -> contains characters or digits and is not empty
+    # isdecimal() -> contains digit and not empty
+    # lower() -> lowercase version
+    # islower() -> to check string is lowercase
+    # upper() -> uppercase version
+    # isupper() -> to check string is uppercase
+    # title() -> capitalize version
+    # startswith() -> string starts with specific substring
+    # endswith() -> string ends with specific substring
+    # replace() -> replace part of a string
+    # spilt() -> spilt string
+    # strip() -> to trim whitespace
+    # join() -> to append new letters
+    # find() -> to find the position
+
+    # \ -> escaping characters
+    # \n -> new line
+
 
 
