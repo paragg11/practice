@@ -492,4 +492,37 @@ if __name__ == "__main__":
     # print(age)
     # test()
 
-    #
+    # NESTED FUNCTIONS
+
+    def talk(phrase):
+        def say(word):
+            print(word)
+
+        words = phrase.split( ' ')
+        for word in words:
+            say(word)
+
+    talk("I am going to buy milk.")                             # I
+                                                                # am
+                                                                # going
+                                                                # to
+                                                                # buy
+                                                                # milk.
+
+    def count():
+        count = 0
+
+        def increment():
+            nonlocal count                                  # nonlocal scope variable
+            count = count + 1
+            print(count)
+
+        increment()
+
+    count()                                                 # 1
+
+
+
+
+
+
