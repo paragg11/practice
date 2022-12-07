@@ -413,3 +413,24 @@ if __name__ == "__main__":
     print(dog)                              # {'name': 'coopie', 'age': 1, 'color': 'white', 'favourite food': 'meat'}
 
     del dog["color"]
+
+    # SETS  -> one of each in one set
+
+    set1 = {"Rogers", "syd"}
+    set2 = {"Rogers"}
+
+    intersect = set1 & set2
+    print(intersect)                     # {'Rogers'}
+
+    modification = set1 | set2
+    print(modification)                  # {'Rogers', 'syd'}
+
+    difference = set1 - set2
+    print(difference)                    # {'syd'}
+
+    mod = set1 > set2
+    print(mod)                           # True
+
+    mod = set1 < set2
+    print(mod)                           # False
+
