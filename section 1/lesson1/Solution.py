@@ -434,3 +434,44 @@ if __name__ == "__main__":
     mod = set1 < set2
     print(mod)                           # False
 
+    # FUNCTIONS
+
+    def hello():
+        print("parag")
+
+    hello()                             # parag
+
+
+    def hello(name):
+        print("Hello " + name)
+
+    hello("parag")                      # Hello parag
+
+
+    def hello(name = "Parag"):
+        print("Hello" + name)
+
+    hello()                             # HelloParag
+
+    def hello(name, age):
+        print("Hello " + name + ", you are " + str(age) + " years old!")
+
+    hello("Parag", 28)                  # Hello Parag, you are 28 years old!
+
+    def hello(name):
+        if not name:
+            return
+        print("Hello " + name + "!")
+
+    hello(False)                        #
+    hello("parag")                      # Hello parag!
+
+    def hello(name):
+        print("Hello" + name + "!")
+        return name, "Gunjal", 20
+
+    print(hello("parag"))              # Helloparag!
+                                       # ('parag', 'Gunjal', 20)
+
+
+
