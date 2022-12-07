@@ -383,3 +383,33 @@ if __name__ == "__main__":
     newtuples = names + ("gg", "pmg")
     print(newtuples)                        # ('parag', 'pg', 'parry', 'gg', 'pmg')
 
+    # DICTIONARIES  -> key-value pair
+
+    dog = {"name": "Roger", "age": 10}
+
+    print(dog["name"])                      # Roger
+
+    dog["name"] = "coopie"
+
+    print(dog)                              # {'name': 'coopie', 'age': 10}
+    print(dog.get("name"))                  # coopie
+
+    print(dog.get("color", "white"))        # white
+    print(dog)                              # {'name': 'coopie', 'age': 10}
+    print(dog.get("color", "red"))          # red
+
+    print(dog.pop("name"))                  # coopie
+    print(dog)                              # {'age': 10}
+
+    #print(dog.popitem())    ->             # removes last item in dictionary
+
+    dog = {"name": "coopie", "age": 1, "color": "white"}
+    print(dog.keys())                       # dict_keys(['name', 'age', 'color'])
+    print(list(dog.keys()))                 # ['name', 'age', 'color']
+    print(dog.values())                     # dict_values(['coopie', 1, 'white'])
+    print(list(dog.values()))               # ['coopie', 1, 'white']
+
+    dog["favourite food"] = "meat"
+    print(dog)                              # {'name': 'coopie', 'age': 1, 'color': 'white', 'favourite food': 'meat'}
+
+    del dog["color"]
