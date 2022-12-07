@@ -474,4 +474,22 @@ if __name__ == "__main__":
                                        # ('parag', 'Gunjal', 20)
 
 
+    # VARIABLE SCOPES
 
+    age = 8                             # Global variable
+
+    def test():
+        print(age)
+
+    print(age)                          # 8
+    test()                              # 8
+
+
+    # def test():
+    #     age = 8                         # inside function
+    #     print(age)
+    #
+    # print(age)
+    # test()
+
+    #
