@@ -602,3 +602,12 @@ if __name__ == "__main__":
     print(roger.bark())                     # woof!
     roger.walk()                            # walking!!
 
+    # MODULES -> code reuse and called from other files
+
+    from datetime import datetime
+
+    print(datetime.now())                   # 2022-12-08 21:23:03.501746
+
+    from math import sqrt
+
+    print(sqrt(16))                         # 4.0
