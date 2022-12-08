@@ -557,8 +557,26 @@ if __name__ == "__main__":
 
     items = ["parag", "pg", "pmg", "p"]
     for index, item in enumerate(items):
-        print(index, item)
+        print(index, item)                      # 0 parag
+                                                # 1 pg
+                                                # 2 pmg
+                                                # 3 p
 
+    # BREAK AND CONTINUE
+
+    items = [1, 2, 3, 4]
+    for item in items:
+        if item == 2:
+            continue
+        print(item)                             # 1
+                                                # 3
+                                                # 4
+
+    items = [1, 2, 3, 4]
+    for item in items:
+        if item == 2:
+            break
+        print(item)                             # 1
 
 
 
