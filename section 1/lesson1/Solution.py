@@ -521,7 +521,43 @@ if __name__ == "__main__":
 
     count()                                                 # 1
 
+    # OBJECTS -> everything in python is objects
+    #         -> objects have attributes and methods and can be accessed by using dot syntax
 
+    items = [1, 2]
+    items.append(3)
+    items.pop()
+    print(id(items))
+
+    # An Object is an instance of a Class.A class is like a blueprint while an instance is a copy of the class
+    # with actual values.
+    # Python is object-oriented programming language that stresses on objects
+    # i.e.it mainly emphasizes functions.Objects are basically an encapsulation of data variables and
+    # methods acting on that data into a single entity.
+    # Instance defining represent memory allocation necessary for storing the actual data of variables.
+    # Each time when you create an object of class the copy of each data variables defined in that class is created.
+    # In simple language we can state that each object of a class has its own copy of data members defined in that class.
+
+
+    # LOOPS -> while and for loop
+
+    count = 0
+    while count < 10:
+        print("the condition is true.")
+        count += 1
+
+    print("after the loop")
+
+    items = [1, 2, 3, 4]
+    for item in items:
+        print(item)
+
+    for item in range(15):
+        print(item)
+
+    items = ["parag", "pg", "pmg", "p"]
+    for index, item in enumerate(items):
+        print(index, item)
 
 
 
