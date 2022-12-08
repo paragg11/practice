@@ -578,5 +578,27 @@ if __name__ == "__main__":
             break
         print(item)                             # 1
 
+    # CLASSES -> an object is an instance of a class
 
+    class Animal:
+        def walk(self):
+            print("walking!!!")
+
+    class Dog(Animal):          # -> dog class is going to inherit from class animal
+
+        def __init__(self, name, age):  #-> init is a constructor
+            self.name = name
+            self.age = age
+
+        def bark(self):                       #  -> method bark -> self is an argument to method and point to current \
+                                                # object instance
+            print("woof!")
+
+    roger = Dog("Roger", 8)
+
+    print(roger.name)                       # Roger
+    print(roger.age)                        # 8
+
+    print(roger.bark())                     # woof!
+    roger.walk()                            # walking!!
 
