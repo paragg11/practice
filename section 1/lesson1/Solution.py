@@ -679,3 +679,20 @@ if __name__ == "__main__":
 
     print(factorial(2))
 
+    # DECORATORS -> A decorator is a design pattern in Python that allows a user to add new functionality
+    # to an existing object without modifying its structure.
+    # Decorators are usually called before the definition of a function you want to decorate.
+
+    def logtime(func):
+        def wrapper():
+            print("before")
+            val = func()
+            print("after")
+            return val
+        return wrapper
+
+    @logtime
+    def hello():
+        print("hello")
+
+    hello()
