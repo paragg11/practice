@@ -696,3 +696,11 @@ if __name__ == "__main__":
         print("hello")
 
     hello()
+
+    # DOCSTRINGS
+
+    def increment(n):
+        """Increment a number"""
+        return n+1
+
+    print(help(increment))
