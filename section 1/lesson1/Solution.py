@@ -634,6 +634,10 @@ if __name__ == "__main__":
 
     print(list(result))                 # [2, 4, 6]
 
+    result1 = map(lambda a : a * 2, numbers)
+
+    print(list(result1))                # [2, 4, 6]
+
 
 
 
