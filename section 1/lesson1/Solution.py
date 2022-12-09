@@ -634,6 +634,8 @@ if __name__ == "__main__":
 
     print(list(result))                 # [2, 4, 6]
 
+    # map with lambda
+
     result1 = map(lambda a : a * 2, numbers)
 
     print(list(result1))                # [2, 4, 6]
@@ -645,10 +647,14 @@ if __name__ == "__main__":
     def is_even(n):
         return n % 2 == 0
 
+
+
     result2 = filter(is_even, new_numbers)
 
     print(list(result2))                    # [2, 4, 6]
 
+    # filter with lambda
 
+    result3 = filter(lambda a : a % 2 == 0, new_numbers)
 
-
+    print(list(result2))                    # [2, 4, 6]
