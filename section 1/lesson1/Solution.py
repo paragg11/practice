@@ -704,3 +704,10 @@ if __name__ == "__main__":
         return n+1
 
     print(help(increment))
+
+    # ANNOTATIONS
+
+    def increment(n : int) -> int:
+        return n+1
+
+    count: int = 0
