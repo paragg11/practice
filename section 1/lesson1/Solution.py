@@ -711,3 +711,37 @@ if __name__ == "__main__":
         return n+1
 
     count: int = 0
+
+    # EXCEPTIONS
+
+    try:
+        result = 2/0
+
+    except ZeroDivisionError:
+        print("cannot divide by zero.")
+
+    finally:
+        result = 1
+
+    print(result)
+
+    try:
+        raise Exception("An error!")
+    except Exception as error:
+        print(error)
+
+    class DogNOtFoundException(Exception):
+        print("inside")
+        pass
+
+    try:
+        raise DogNOtFoundException
+    except DogNOtFoundException:
+        print("Dog not found")
+
+    filename = "/home/path"
+
+    with open(filename, "r") as file:           # with -> helps to close file itself
+        content = file.read()
+        print(content)
+
