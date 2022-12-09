@@ -658,3 +658,15 @@ if __name__ == "__main__":
     result3 = filter(lambda a : a % 2 == 0, new_numbers)
 
     print(list(result2))                    # [2, 4, 6]
+
+    # REDUCE FUNCTION
+
+    from functools import reduce
+
+    expenses = [
+        ("dinner", 80),
+        ("repair", 120)
+    ]
+
+    sum = reduce(lambda a, b: a[1] + b[1], expenses)
+    print(sum)                              # 200
