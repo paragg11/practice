@@ -670,3 +670,12 @@ if __name__ == "__main__":
 
     sum = reduce(lambda a, b: a[1] + b[1], expenses)
     print(sum)                              # 200
+
+    # RECURSION -> a function in python calls itself
+
+    def factorial(n):
+        if n == 1: return 1                     # base case
+        return n * factorial(n-1)               # recursive case
+
+    print(factorial(2))
+
