@@ -745,3 +745,12 @@ if __name__ == "__main__":
         content = file.read()
         print(content)
 
+    # PIP
+
+    # pip install -U requests
+
+    # pip install requests
+
+    # pip uninstall requests
+
+
