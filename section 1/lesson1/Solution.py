@@ -741,9 +741,9 @@ if __name__ == "__main__":
 
     filename = "/home/path"
 
-    with open(filename, "r") as file:           # with -> helps to close file itself
-        content = file.read()
-        print(content)
+    # with open(filename, "r") as file:           # with -> helps to close file itself
+    #     content = file.read()
+    #     print(content)
 
     # PIP
 
@@ -760,3 +760,21 @@ if __name__ == "__main__":
     numbers_power_2 = [n**2 for n in numbers]
 
     print(numbers_power_2)                  # [1, 4, 9, 16, 25]
+
+    # POLYMORPHISM
+
+    class Dog:
+        def eat(self):
+            print("eating dog food")
+
+    class Cat:
+        def eat(self):
+            print("eating cat food")
+
+
+    animal1 = Dog()
+    animal2 = Cat()
+
+    animal1.eat()                   # eating dog food
+    animal2.eat()                   # eating cat food
+
