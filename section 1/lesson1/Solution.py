@@ -778,3 +778,22 @@ if __name__ == "__main__":
     animal1.eat()                   # eating dog food
     animal2.eat()                   # eating cat food
 
+    # OPERATOR OVERLOADING
+
+    class Dog:
+
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+        def __gt__(self, other):
+            return True if self.age > other.age else False
+
+    roger = Dog("roger", 8)
+    syd = Dog("syd", 6)
+
+    print(roger > syd)          # True
+    print(syd > roger)          # False
+
+
+
