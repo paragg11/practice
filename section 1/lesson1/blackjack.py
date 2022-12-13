@@ -1,9 +1,13 @@
-suits = ["spades", "clubs", "hearts", "diamonds", "snakes"]
-suit = suits[2]
-rank = "K"
-value = 10
+cards = []
 
-print("Your card is: " + rank + " of " + suit)
+suits = ["spades", "clubs", "hearts", "diamonds", "snakes"]
+
+ranks = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+
 
 for suit in suits:
-    print(suit)
+    print([suit, ranks[0]])                 # ['spades', 'A']
+                                            # ['clubs', 'A']
+                                            # ['hearts', 'A']
+                                            # ['diamonds', 'A']
+                                            # ['snakes', 'A']
