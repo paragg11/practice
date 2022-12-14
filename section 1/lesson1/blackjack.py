@@ -79,10 +79,13 @@ class Hand:
     def blackjack(self):
         return self.get_value() == 21
 
-    def display(self):
+    def display(self, show_all_dealer_cards = False):
         print(f"""{"Dealer's" if self.dealer else "Your"} hand: """)
-        for card in self.cards:
-            print(card)
+        for index, card in enumerate(self.cards):
+            if index == 0 and self.dealer and not show_all_dealer_cards and not self.blackjack():
+                print("hidden.")
+            else:
+                print(card)
 
         if not self.dealer:
             print("Value:", self.get_value())
