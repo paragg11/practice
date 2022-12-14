@@ -7,7 +7,7 @@ class Card:
         self.rank = rank
 
     def __str__(self):
-        return self.rank["rank"] + " of " + self.suit
+        return f"{self.rank['rank']} of {self.suit}"
 
 
 class Deck:
@@ -35,7 +35,7 @@ class Deck:
 
         for suit in suits:
             for rank in ranks:
-                self.cards.append([suit, rank])
+                self.cards.append(Card(suit, rank))
 
     def shuffle(self):
         if len(self.cards) > 1:
