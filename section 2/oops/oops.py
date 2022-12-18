@@ -27,5 +27,7 @@ print(item1.calculate_total_price())
 print(Item.pay_rate)                     # 0.8 class attribute
 print(item1.pay_rate)                    # 0.8 instance attribute
 
-
-
+print(Item.__dict__)            # All the attributes for class level
+# {'__module__': '__main__', 'pay_rate': 0.8, '__init__': <function Item.__init__ at 0x7ff5cca05ea0>, 'calculate_total_price': <function Item.calculate_total_price at 0x7ff5cca060e0>, '__dict__': <attribute '__dict__' of 'Item' objects>, '__weakref__': <attribute '__weakref__' of 'Item' objects>, '__doc__': None}
+print(item1.__dict__)           # All the attributes for instance level
+# {'name': 'parag', 'price': 5, 'quantity': 100}
