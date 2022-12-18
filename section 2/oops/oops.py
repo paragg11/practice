@@ -18,16 +18,15 @@ class Item:
     def calculate_total_price(self):
         return self.price * self.quantity
 
+    def apply_discount(self):
+        self.price = self.price * Item.pay_rate   # NameError: name 'pay_rate' is not defined
+                                                  # You cannot access by using pay_rate intead use Item.pay_rate
 
-item1 = Item("parag", 11, 10)          # AssertionError: Price -11 is not greater than or equal to zero!
-item1.price = 5
-item1.quantity = 100
-print(item1.calculate_total_price())
 
-print(Item.pay_rate)                     # 0.8 class attribute
-print(item1.pay_rate)                    # 0.8 instance attribute
+item1 = Item("parag", 11, 10)
+item1.apply_discount()
+print(item1.price)                  # 8.8
 
-print(Item.__dict__)            # All the attributes for class level
-# {'__module__': '__main__', 'pay_rate': 0.8, '__init__': <function Item.__init__ at 0x7ff5cca05ea0>, 'calculate_total_price': <function Item.calculate_total_price at 0x7ff5cca060e0>, '__dict__': <attribute '__dict__' of 'Item' objects>, '__weakref__': <attribute '__weakref__' of 'Item' objects>, '__doc__': None}
-print(item1.__dict__)           # All the attributes for instance level
-# {'name': 'parag', 'price': 5, 'quantity': 100}
+
+
+
