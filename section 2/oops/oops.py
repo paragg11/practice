@@ -19,7 +19,7 @@ class Item:
         return self.price * self.quantity
 
     def apply_discount(self):
-        self.price = self.price * Item.pay_rate   # NameError: name 'pay_rate' is not defined
+        self.price = self.price * self.pay_rate   # NameError: name 'pay_rate' is not defined
                                                   # You cannot access by using pay_rate intead use Item.pay_rate
 
 
@@ -27,6 +27,10 @@ item1 = Item("parag", 11, 10)
 item1.apply_discount()
 print(item1.price)                  # 8.8
 
+item2 = Item("p", 10, 10)
+item2.pay_rate = 30
+item2.apply_discount()
+print(item2.price)
 
 
 
