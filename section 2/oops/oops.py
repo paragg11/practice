@@ -1,5 +1,7 @@
 class Item:
 
+    pay_rate = 0.8
+
     def __init__(self, name: str, price: float, quantity=0):  # magic methods -> when instance is created, python calls init method \
         # first in class.
 
@@ -13,16 +15,15 @@ class Item:
         self.price = price
         self.quantity = quantity
 
-
     def calculate_total_price(self):
         return self.price * self.quantity
 
 
-item1 = Item("parag", -11, 10)          # AssertionError: Price -11 is not greater than or equal to zero!
-item1.price = 5
-item1.quantity = 100
-print(item1.calculate_total_price())
+# item1 = Item("parag", -11, 10)          # AssertionError: Price -11 is not greater than or equal to zero!
+# item1.price = 5
+# item1.quantity = 100
+# print(item1.calculate_total_price())
 
-
+print(Item.pay_rate)                     # 0.8 class attribute
 
 
