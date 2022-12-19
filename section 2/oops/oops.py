@@ -15,6 +15,12 @@ class Item:
         self.price = price
         self.quantity = quantity
 
+        # actions to execute
+        # Item.all.append(self)
+
+        def __repr__(self):
+            return f"Item '{self.name}' {self.price} {self.quantity}"
+
     def calculate_total_price(self):
         return self.price * self.quantity
 
@@ -24,13 +30,10 @@ class Item:
 
 
 item1 = Item("parag", 11, 10)
-item1.apply_discount()
-print(item1.price)                  # 8.8
-
 item2 = Item("p", 10, 10)
-item2.pay_rate = 30
-item2.apply_discount()
-print(item2.price)
+item3 = Item("a", 10, 10)
+item4 = Item("r", 10, 10)
+item5 = Item("a", 10, 10)
 
-
+print(Item.all)
 
