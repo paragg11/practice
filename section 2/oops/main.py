@@ -1,12 +1,15 @@
 import csv
 
+
 class Item:                     # parent class
-    pass
+    def __init__(self, name):
+            self.name = name
+
 
 class Phone(Item):              # child class
-    pass
+    def __init__(self, name, broken_phone=100):
+        # super function gives full access to attributes/methods of parent class.
+        super().__init__(name)
 
-phone1 = Phone()
-phone1.broken_phone = 1
-phone2 = Item()
-phone2.broken_phone = 10
+
+phone1 = Phone("a")
