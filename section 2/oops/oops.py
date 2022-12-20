@@ -36,6 +36,18 @@ class Item:
         for item in items:
             print(item)
 
+    @staticmethod
+    def is_integer(num):
+        # we will count out the floats that are point zero
+        # For i.e. 5.0, 10.0
+        if isinstance(num, float):
+            # count out the floats that are point zero
+            return num.is_integer()
+        elif isinstance(num, int):
+            return True
+        else:
+            return False
+
     def apply_discount(self):
         self.price = self.price * self.pay_rate   # NameError: name 'pay_rate' is not defined
                                                   # You cannot access by using pay_rate intead use Item.pay_rate
@@ -47,3 +59,4 @@ Item.instantiate_from_csv()             # {'name': 'phone', ' price': ' 100', ' 
                                         # {'name': 'keyboard', ' price': ' 75', ' quantity': ' 5'}
 
 
+print(Item.is_integer(9))
