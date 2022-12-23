@@ -66,7 +66,7 @@ class Hand:
         for card in self.cards:
             card_value = int(card.rank["value"])
             self.value += card_value
-            if card.rank["rank"] == A:
+            if card.rank["rank"] == "A":
                 has_ace = True
 
         if has_ace and self.value > 21:
@@ -116,14 +116,14 @@ class Game:
             player_hand.add_card(deck.deal(1))
             dealer_hand.add_card(deck.deal(1))
 
-        print("*" * 30)
-        print(f"Game {game_number} of {games_to_play} ")
-        print("*" * 30)
-        player_hand.display()
-        dealer_hand.display()
+            print("*" * 30)
+            print(f"Game {game_number} of {games_to_play} ")
+            print("*" * 30)
+            player_hand.display()
+            dealer_hand.display()
 
-        if self.check_winner(player_hand, dealer_hand):
-            continue
+            if self.check_winner(player_hand, dealer_hand):
+                continue
 
         choice = ""
         while player_hand.get_value() < 21 and choice not in ["s", "stand"]:
@@ -133,31 +133,31 @@ class Game:
                 print()
 
             if choice in ["hit", "h"]:
-                player_hand.add_card(deck.deal())
+                player_hand.add_card(deck.deal(10))
                 player_hand.display()
 
-        if self.check_winner(player_hand, dealer_hand):
-            continue
+            if self.check_winner(player_hand, dealer_hand):
+                continue
 
-        player_hand_value = player_hand.get_value()
-        dealer_hand_value = dealer_hand.get_value()
+            player_hand_value = player_hand.get_value()
+            dealer_hand_value = dealer_hand.get_value()
 
         while dealer_hand_value < 17:
             dealer_hand.add_card(deck.deal)
             dealer_hand_value = dealer_hand.get_value()
 
-        dealer_hand.display(show_all_dealer_cards=True)
+            dealer_hand.display(show_all_dealer_cards=True)
 
-        if self.check_winner(player_hand, dealer_hand):
-            continue
+            if self.check_winner(player_hand, dealer_hand):
+                continue
+            print("Final Results")
+            print("Your hand:", player_hand_value)
+            print("Dealers hand:", dealer_hand_value)
 
-        print("Final Results")
-        print("Your hand:", player_hand_value)
-        print("Dealers hand:", dealer_hand_value)
+            self.check_winner(player_hand, dealer_hand, True)
 
-        self.check_winner(player_hand, dealer_hand, True)
+            print("Thanks for playing.")
 
-        print("Thanks for playing.")
     def check_winner(self, player_hand, dealer_hand, game_over=False):
         if not game_over:
             if player_hand.get_value() > 21:
